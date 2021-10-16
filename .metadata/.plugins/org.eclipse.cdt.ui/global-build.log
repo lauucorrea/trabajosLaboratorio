@@ -1,0 +1,1719 @@
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+18:49:19 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:36:10: warning: too many arguments for format [-Wformat-extra-args]
+   36 |   printf("La opcion elegida es :", optionMenu);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP2.c:46:36: warning: passing argument 2 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                    ^~~~~~~~~~~~~
+      |                                    |
+      |                                    char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:38: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                ~~~~~~^~~~~~
+..\src\TP2.c:46:51: warning: passing argument 3 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                                   ^~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:52: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                              ~~~~~~^~~~~~~~~~
+..\src\TP2.c:33:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   33 |  int indexId;
+      |      ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+18:49:42 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:46:36: warning: passing argument 2 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                    ^~~~~~~~~~~~~
+      |                                    |
+      |                                    char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:38: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                ~~~~~~^~~~~~
+..\src\TP2.c:46:51: warning: passing argument 3 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                                   ^~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:52: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                              ~~~~~~^~~~~~~~~~
+..\src\TP2.c:33:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   33 |  int indexId;
+      |      ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:49:53 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+18:50:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:46:36: warning: passing argument 2 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                    ^~~~~~~~~~~~~
+      |                                    |
+      |                                    char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:38: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                ~~~~~~^~~~~~
+..\src\TP2.c:46:51: warning: passing argument 3 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                                   ^~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:52: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                              ~~~~~~^~~~~~~~~~
+..\src\TP2.c:33:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   33 |  int indexId;
+      |      ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+18:51:53 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+18:52:13 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:47:36: warning: passing argument 2 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   47 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                    ^~~~~~~~~~~~~
+      |                                    |
+      |                                    char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:38: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                ~~~~~~^~~~~~
+..\src\TP2.c:47:51: warning: passing argument 3 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   47 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                                   ^~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:52: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                              ~~~~~~^~~~~~~~~~
+..\src\TP2.c:33:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   33 |  int indexId;
+      |      ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+18:53:43 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:45:36: warning: passing argument 2 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   45 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                    ^~~~~~~~~~~~~
+      |                                    |
+      |                                    char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:38: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                ~~~~~~^~~~~~
+..\src\TP2.c:45:51: warning: passing argument 3 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   45 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                                   ^~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:52: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                              ~~~~~~^~~~~~~~~~
+..\src\TP2.c:33:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   33 |  int indexId;
+      |      ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+18:55:43 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'LoadEmployeeData':
+..\src\ArrayEmployees.c:111:12: warning: passing argument 1 of 'getString' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  getString(*lastNameEmployee, "Ingrese el apellido del empleado", 50, &lastNameValidation);
+      |            ^~~~~~~~~~~~~~~~~
+      |            |
+      |            char
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:39:21: note: expected 'char *' but argument is of type 'char'
+   39 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |                ~~~~~^~~~~~~~
+..\src\ArrayEmployees.c:107:6: warning: unused variable 'sectorEmployee' [-Wunused-variable]
+  107 |  int sectorEmployee;
+      |      ^~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:106:6: warning: unused variable 'salaryEmployee' [-Wunused-variable]
+  106 |  int salaryEmployee;
+      |      ^~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+18:56:01 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'LoadEmployeeData':
+..\src\ArrayEmployees.c:107:6: warning: unused variable 'sectorEmployee' [-Wunused-variable]
+  107 |  int sectorEmployee;
+      |      ^~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:106:6: warning: unused variable 'salaryEmployee' [-Wunused-variable]
+  106 |  int salaryEmployee;
+      |      ^~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+18:57:03 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:45:36: warning: passing argument 2 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   45 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                    ^~~~~~~~~~~~~
+      |                                    |
+      |                                    char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:38: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                ~~~~~~^~~~~~
+..\src\TP2.c:45:51: warning: passing argument 3 of 'LoadEmployeeData' from incompatible pointer type [-Wincompatible-pointer-types]
+   45 |      LoadEmployeeData(&employeeId, &employeeName, &employeeLastName, &employeeSalary, &employeeSector,&pValidation);
+      |                                                   ^~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   char (*)[50]
+In file included from ..\src\TP2.c:14:
+..\src\ArrayEmployees.h:30:52: note: expected 'char **' but argument is of type 'char (*)[50]'
+   30 | void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+      |                                              ~~~~~~^~~~~~~~~~
+..\src\TP2.c:33:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   33 |  int indexId;
+      |      ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+19:01:21 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:36:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   36 |  int indexId;
+      |      ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+19:08:15 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:36:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   36 |  int indexId;
+      |      ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+19:13:18 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:38:6: warning: variable 'indexId' set but not used [-Wunused-but-set-variable]
+   38 |  int indexId;
+      |      ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+20:40:45 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  140 |       auxiliar = list[i].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:142:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  142 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+..\src\ArrayEmployees.c:148:33: warning: multi-character character constant [-Wmultichar]
+  148 |  }else if(order == 0 && list != 'NULL'){//Mayor a menor
+      |                                 ^~~~~~
+..\src\ArrayEmployees.c:148:30: warning: comparison between pointer and integer
+  148 |  }else if(order == 0 && list != 'NULL'){//Mayor a menor
+      |                              ^~
+..\src\ArrayEmployees.c:152:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  152 |      auxiliar = list[j].sector;
+      |                 ^~~~
+..\src\ArrayEmployees.c:154:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  154 |      list[j].sector = auxiliar;
+      |                       ^~~~~~~~
+20:41:21 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:15: error: subscripted value is neither array nor pointer nor vector
+  140 |       auxiliar[i] = list[i].sector;
+      |               ^
+..\src\ArrayEmployees.c:142:32: error: subscripted value is neither array nor pointer nor vector
+  142 |       list[j].sector = auxiliar[i];
+      |                                ^
+..\src\ArrayEmployees.c:148:33: warning: multi-character character constant [-Wmultichar]
+  148 |  }else if(order == 0 && list != 'NULL'){//Mayor a menor
+      |                                 ^~~~~~
+..\src\ArrayEmployees.c:148:30: warning: comparison between pointer and integer
+  148 |  }else if(order == 0 && list != 'NULL'){//Mayor a menor
+      |                              ^~
+..\src\ArrayEmployees.c:152:14: error: subscripted value is neither array nor pointer nor vector
+  152 |      auxiliar[i] = list[j].sector;
+      |              ^
+..\src\ArrayEmployees.c:154:31: error: subscripted value is neither array nor pointer nor vector
+  154 |      list[j].sector = auxiliar[i];
+      |                               ^
+..\src\ArrayEmployees.c:134:11: warning: variable 'auxiliar' set but not used [-Wunused-but-set-variable]
+  134 |  Employee auxiliar;
+      |           ^~~~~~~~
+20:41:55 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:15: error: subscripted value is neither array nor pointer nor vector
+  140 |       auxiliar[i].sector = list[i].sector;
+      |               ^
+..\src\ArrayEmployees.c:142:32: error: subscripted value is neither array nor pointer nor vector
+  142 |       list[j].sector = auxiliar[i].sector;
+      |                                ^
+..\src\ArrayEmployees.c:148:33: warning: multi-character character constant [-Wmultichar]
+  148 |  }else if(order == 0 && list != 'NULL'){//Mayor a menor
+      |                                 ^~~~~~
+..\src\ArrayEmployees.c:148:30: warning: comparison between pointer and integer
+  148 |  }else if(order == 0 && list != 'NULL'){//Mayor a menor
+      |                              ^~
+..\src\ArrayEmployees.c:152:14: error: subscripted value is neither array nor pointer nor vector
+  152 |      auxiliar[i].sector = list[j].sector;
+      |              ^
+..\src\ArrayEmployees.c:154:31: error: subscripted value is neither array nor pointer nor vector
+  154 |      list[j].sector = auxiliar[i].sector;
+      |                               ^
+..\src\ArrayEmployees.c:134:11: warning: variable 'auxiliar' set but not used [-Wunused-but-set-variable]
+  134 |  Employee auxiliar;
+      |           ^~~~~~~~
+20:42:04 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:15: error: subscripted value is neither array nor pointer nor vector
+  140 |       auxiliar[i] = list[i].sector;
+      |               ^
+..\src\ArrayEmployees.c:142:32: error: subscripted value is neither array nor pointer nor vector
+  142 |       list[j].sector = auxiliar[i];
+      |                                ^
+..\src\ArrayEmployees.c:148:33: warning: multi-character character constant [-Wmultichar]
+  148 |  }else if(order == 0 && list != 'NULL'){//Mayor a menor
+      |                                 ^~~~~~
+..\src\ArrayEmployees.c:148:30: warning: comparison between pointer and integer
+  148 |  }else if(order == 0 && list != 'NULL'){//Mayor a menor
+      |                              ^~
+..\src\ArrayEmployees.c:152:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  152 |      auxiliar = list[j].sector;
+      |                 ^~~~
+..\src\ArrayEmployees.c:154:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  154 |      list[j].sector = auxiliar;
+      |                       ^~~~~~~~
+20:42:14 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:15: error: subscripted value is neither array nor pointer nor vector
+  140 |       auxiliar[i] = list[i].sector;
+      |               ^
+..\src\ArrayEmployees.c:142:32: error: subscripted value is neither array nor pointer nor vector
+  142 |       list[j].sector = auxiliar[i];
+      |                                ^
+..\src\ArrayEmployees.c:152:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  152 |      auxiliar = list[j].sector;
+      |                 ^~~~
+..\src\ArrayEmployees.c:154:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  154 |      list[j].sector = auxiliar;
+      |                       ^~~~~~~~
+20:43:06 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:15: error: subscripted value is neither array nor pointer nor vector
+  140 |       auxiliar[i] = list[i].sector;
+      |               ^
+..\src\ArrayEmployees.c:142:32: error: subscripted value is neither array nor pointer nor vector
+  142 |       list[j].sector = auxiliar[i];
+      |                                ^
+..\src\ArrayEmployees.c:152:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  152 |      auxiliar = list[j].sector;
+      |                 ^~~~
+..\src\ArrayEmployees.c:154:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  154 |      list[j].sector = auxiliar;
+      |                       ^~~~~~~~
+20:43:41 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  140 |       auxiliar = list[i].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:142:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  142 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+..\src\ArrayEmployees.c:152:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  152 |      auxiliar = list[j].sector;
+      |                 ^~~~
+..\src\ArrayEmployees.c:154:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  154 |      list[j].sector = auxiliar;
+      |                       ^~~~~~~~
+20:44:26 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  140 |       auxiliar = list[i].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:142:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  142 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+..\src\ArrayEmployees.c:152:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  152 |      auxiliar = list[j].sector;
+      |                 ^~~~
+..\src\ArrayEmployees.c:154:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  154 |      list[j].sector = auxiliar;
+      |                       ^~~~~~~~
+20:44:40 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+20:55:44 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+21:23:59 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:153:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  153 |      list[j].sector = auxiliar;
+      |                       ^~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:173:5: error: redefinition of 'sortEmployeesBySector'
+  173 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:132:5: note: previous definition of 'sortEmployeesBySector' was here
+  132 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+21:25:08 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:140:21: error: assignment to expression with array type
+  140 |       listaAuxiliar = list[i];
+      |                     ^
+..\src\ArrayEmployees.c:142:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'Employee *' {aka 'struct <anonymous> *'}
+  142 |       list[j] = listaAuxiliar;
+      |                 ^~~~~~~~~~~~~
+..\src\ArrayEmployees.c:152:20: error: assignment to expression with array type
+  152 |      listaAuxiliar = list[j];
+      |                    ^
+..\src\ArrayEmployees.c:154:21: warning: assignment to 'int' from 'Employee *' {aka 'struct <anonymous> *'} makes integer from pointer without a cast [-Wint-conversion]
+  154 |      list[j].sector = listaAuxiliar;
+      |                     ^
+..\src\ArrayEmployees.c:133:11: warning: unused variable 'auxiliar' [-Wunused-variable]
+  133 |  Employee auxiliar;
+      |           ^~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:174:5: error: redefinition of 'sortEmployeesBySector'
+  174 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:132:5: note: previous definition of 'sortEmployeesBySector' was here
+  132 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+21:25:38 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:154:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  154 |      list[j].sector = listaAuxiliar[i];
+      |                       ^~~~~~~~~~~~~
+..\src\ArrayEmployees.c:133:11: warning: unused variable 'auxiliar' [-Wunused-variable]
+  133 |  Employee auxiliar;
+      |           ^~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:174:5: error: redefinition of 'sortEmployeesBySector'
+  174 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:132:5: note: previous definition of 'sortEmployeesBySector' was here
+  132 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+21:26:09 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:154:23: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  154 |      list[j].sector = listaAuxiliar[i];
+      |                       ^~~~~~~~~~~~~
+..\src\ArrayEmployees.c:133:11: warning: unused variable 'auxiliar' [-Wunused-variable]
+  133 |  Employee auxiliar;
+      |           ^~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:174:5: error: redefinition of 'sortEmployeesBySector'
+  174 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:132:5: note: previous definition of 'sortEmployeesBySector' was here
+  132 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+21:26:19 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:133:11: warning: unused variable 'auxiliar' [-Wunused-variable]
+  133 |  Employee auxiliar;
+      |           ^~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:174:5: error: redefinition of 'sortEmployeesBySector'
+  174 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:132:5: note: previous definition of 'sortEmployeesBySector' was here
+  132 | int sortEmployeesBySector(Employee* list, int len, int order){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+21:26:44 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployeesBySector':
+..\src\ArrayEmployees.c:133:11: warning: unused variable 'auxiliar' [-Wunused-variable]
+  133 |  Employee auxiliar;
+      |           ^~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+21:55:48 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+23:37:53 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+..\src\functions.c: In function 'MostrarSubMenuABM':
+..\src\functions.c:35:10: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'int *' [-Wformat=]
+   35 |  scanf("%c", &opcion);
+      |         ~^   ~~~~~~~
+      |          |   |
+      |          |   int *
+      |          char *
+      |         %d
+..\src\functions.c:36:29: warning: passing argument 1 of 'ValidarString' makes pointer from integer without a cast [-Wint-conversion]
+   36 |  validacion = ValidarString(opcion);
+      |                             ^~~~~~
+      |                             |
+      |                             int
+In file included from ..\src\functions.c:1:
+..\src\functions.h:63:24: note: expected 'char *' but argument is of type 'int'
+   63 | int ValidarString(char string[]);
+      |                   ~~~~~^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c:256:5: error: conflicting types for 'EjecutarAccionABM'
+  256 | int EjecutarAccionABM(Employee* list, int index, int option){
+      |     ^~~~~~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:1:
+..\src\ArrayEmployees.h:82:5: note: previous declaration of 'EjecutarAccionABM' was here
+   82 | int EjecutarAccionABM(Employee* list, int index, int option, int* nameValidation, int* lastNameValidation, int* salaryValidation, int* sectorValidation);
+      |     ^~~~~~~~~~~~~~~~~
+23:40:26 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+00:11:01 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+..\src\functions.c: In function 'MostrarSubMenuABM':
+..\src\functions.c:35:10: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'int *' [-Wformat=]
+   35 |  scanf("%c", &opcion);
+      |         ~^   ~~~~~~~
+      |          |   |
+      |          |   int *
+      |          char *
+      |         %d
+..\src\functions.c:36:29: warning: passing argument 1 of 'ValidarString' makes pointer from integer without a cast [-Wint-conversion]
+   36 |  validacion = ValidarString(opcion);
+      |                             ^~~~~~
+      |                             |
+      |                             int
+In file included from ..\src\functions.c:1:
+..\src\functions.h:63:24: note: expected 'char *' but argument is of type 'int'
+   63 | int ValidarString(char string[]);
+      |                   ~~~~~^~~~~~~~
+..\src\functions.c: In function 'MostrarSubMenuInformes':
+..\src\functions.c:62:10: warning: returning 'void *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+   62 |   return NULL;
+      |          ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:143:15: error: used struct type value where scalar is required
+  143 |      }else if(list[i])
+      |               ^~~~
+..\src\ArrayEmployees.c:157:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  157 |       auxiliar = list[j].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:159:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  159 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:220:17: warning: implicit declaration of function 'sortEmployeesBySector' [-Wimplicit-function-declaration]
+  220 |    validation = sortEmployeesBySector(EmployeesList, TAM, 1);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:276:5: error: conflicting types for 'EjecutarAccionInformes'
+  276 | int EjecutarAccionInformes(Employee* list, int index, char option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:215:5: note: previous definition of 'EjecutarAccionInformes' was here
+  215 | int EjecutarAccionInformes(Employee* list, int index, int option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+00:12:51 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:91:41: warning: comparison between pointer and integer
+   91 |       if(pValidation != 0 || optionMenu == NULL){
+      |                                         ^~
+..\src\TP2.c:138:29: warning: passing argument 1 of 'MostrarSubMenuInformes' makes pointer from integer without a cast [-Wint-conversion]
+  138 |      MostrarSubMenuInformes(pValidation);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             int
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:42:33: note: expected 'int *' but argument is of type 'int'
+   42 | int MostrarSubMenuInformes(int *pValidacion);
+      |                            ~~~~~^~~~~~~~~~~
+..\src\TP2.c:145:20: warning: implicit declaration of function 'sortEmployeesByLastName' [-Wimplicit-function-declaration]
+  145 |      pValidation = sortEmployeesByLastName(EmployeesList, TAM, 1);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:142:15: error: subscripted value is neither array nor pointer nor vector
+  142 |       auxiliar[i] = list[i];
+      |               ^
+..\src\ArrayEmployees.c:144:25: error: subscripted value is neither array nor pointer nor vector
+  144 |       list[j] = auxiliar[i];
+      |                         ^
+..\src\ArrayEmployees.c:146:29: warning: self-comparison always evaluates to true [-Wtautological-compare]
+  146 |      else if(list[i].sector == list[i].sector){
+      |                             ^~
+..\src\ArrayEmployees.c:157:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  157 |       auxiliar = list[j].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:159:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  159 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:220:17: warning: implicit declaration of function 'sortEmployeesBySector' [-Wimplicit-function-declaration]
+  220 |    validation = sortEmployeesBySector(EmployeesList, TAM, 1);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:276:5: error: conflicting types for 'EjecutarAccionInformes'
+  276 | int EjecutarAccionInformes(Employee* list, int index, char option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:215:5: note: previous definition of 'EjecutarAccionInformes' was here
+  215 | int EjecutarAccionInformes(Employee* list, int index, int option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+00:13:04 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:146:29: warning: self-comparison always evaluates to true [-Wtautological-compare]
+  146 |      else if(list[i].sector == list[i].sector){
+      |                             ^~
+..\src\ArrayEmployees.c:157:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  157 |       auxiliar = list[j].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:159:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  159 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:220:17: warning: implicit declaration of function 'sortEmployeesBySector' [-Wimplicit-function-declaration]
+  220 |    validation = sortEmployeesBySector(EmployeesList, TAM, 1);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:276:5: error: conflicting types for 'EjecutarAccionInformes'
+  276 | int EjecutarAccionInformes(Employee* list, int index, char option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:215:5: note: previous definition of 'EjecutarAccionInformes' was here
+  215 | int EjecutarAccionInformes(Employee* list, int index, int option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+00:13:15 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:157:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  157 |       auxiliar = list[j].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:159:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  159 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:220:17: warning: implicit declaration of function 'sortEmployeesBySector' [-Wimplicit-function-declaration]
+  220 |    validation = sortEmployeesBySector(EmployeesList, TAM, 1);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:276:5: error: conflicting types for 'EjecutarAccionInformes'
+  276 | int EjecutarAccionInformes(Employee* list, int index, char option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:215:5: note: previous definition of 'EjecutarAccionInformes' was here
+  215 | int EjecutarAccionInformes(Employee* list, int index, int option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+00:15:13 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:157:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  157 |       auxiliar = list[j].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:159:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  159 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:215:5: error: conflicting types for 'EjecutarAccionInformes'
+  215 | int EjecutarAccionInformes(Employee* list, int index, int option){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:1:
+..\src\ArrayEmployees.h:82:5: note: previous declaration of 'EjecutarAccionInformes' was here
+   82 | int EjecutarAccionInformes(Employee* list, int index, char option);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+00:15:30 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:157:18: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  157 |       auxiliar = list[j].sector;
+      |                  ^~~~
+..\src\ArrayEmployees.c:159:24: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  159 |       list[j].sector = auxiliar;
+      |                        ^~~~~~~~
+00:15:50 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:91:41: warning: comparison between pointer and integer
+   91 |       if(pValidation != 0 || optionMenu == NULL){
+      |                                         ^~
+..\src\TP2.c:138:29: warning: passing argument 1 of 'MostrarSubMenuInformes' makes pointer from integer without a cast [-Wint-conversion]
+  138 |      MostrarSubMenuInformes(pValidation);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             int
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:42:33: note: expected 'int *' but argument is of type 'int'
+   42 | int MostrarSubMenuInformes(int *pValidacion);
+      |                            ~~~~~^~~~~~~~~~~
+..\src\TP2.c:145:20: warning: implicit declaration of function 'sortEmployeesByLastName' [-Wimplicit-function-declaration]
+  145 |      pValidation = sortEmployeesByLastName(EmployeesList, TAM, 1);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:231:9: warning: 'retorno' is used uninitialized in this function [-Wuninitialized]
+  231 |  return retorno;
+      |         ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\TP2.o: in function `main':
+C:\Users\Lauta\Documents\UTN\Primer Cuatrimestre\Laboratorio 1\trabajosLaboratorio\TP2\Debug/../src/TP2.c:145: undefined reference to `sortEmployeesByLastName'
+collect2.exe: error: ld returned 1 exit status
+00:16:21 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:91:41: warning: comparison between pointer and integer
+   91 |       if(pValidation != 0 || optionMenu == NULL){
+      |                                         ^~
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+00:17:02 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:91:44: warning: comparison between pointer and integer
+   91 |       if(pValidation != 0 || optionSubMenu == NULL){
+      |                                            ^~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+00:17:36 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+00:17:51 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: error: array size missing in 'optionSubMenu'
+   24 |  char optionSubMenu[];
+      |       ^~~~~~~~~~~~~
+..\src\TP2.c:90:21: error: assignment to expression with array type
+   90 |       optionSubMenu = MostrarSubMenuABM(&pValidation);
+      |                     ^
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu[];
+      |       ^~~~~~~~~~~~~
+00:17:55 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+02:48:39 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:231:9: warning: 'retorno' is used uninitialized in this function [-Wuninitialized]
+  231 |  return retorno;
+      |         ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+02:49:49 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:232:9: warning: 'retorno' is used uninitialized in this function [-Wuninitialized]
+  232 |  return retorno;
+      |         ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+02:52:26 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:232:9: warning: 'retorno' is used uninitialized in this function [-Wuninitialized]
+  232 |  return retorno;
+      |         ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+02:53:42 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:88:3: error: invalid type argument of unary '*' (have 'int')
+   88 |   *list[freeSlot].id = id;
+      |   ^~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:91:3: error: invalid type argument of unary '*' (have 'float')
+   91 |   *list[freeSlot].salary = salary;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:92:3: error: invalid type argument of unary '*' (have 'int')
+   92 |   *list[freeSlot].sector = sector;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:93:3: error: invalid type argument of unary '*' (have 'int')
+   93 |   *list[freeSlot].isEmpty = 0;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+02:54:12 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:232:9: warning: 'retorno' is used uninitialized in this function [-Wuninitialized]
+  232 |  return retorno;
+      |         ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+02:55:20 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'printEmployees':
+..\src\ArrayEmployees.c:189:52: error: invalid type argument of unary '*' (have 'int')
+  189 |    printf("| %4d | %15s | %10s | %4.2f | %4d |\n", *list[i].id,*list[i].name, *list[i].lastName, *list[i].salary, list[i].sector);
+      |                                                    ^~~~~~~~~~~
+..\src\ArrayEmployees.c:189:98: error: invalid type argument of unary '*' (have 'float')
+  189 |    printf("| %4d | %15s | %10s | %4.2f | %4d |\n", *list[i].id,*list[i].name, *list[i].lastName, *list[i].salary, list[i].sector);
+      |                                                                                                  ^~~~~~~~~~~~~~~
+02:55:28 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:232:9: warning: 'retorno' is used uninitialized in this function [-Wuninitialized]
+  232 |  return retorno;
+      |         ^~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:50:09 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+10:58:11 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+10:59:47 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:03:26 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:08:44 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:11:46 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:12:28 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:13:37 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:14:05 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:15:02 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:15:29 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:51:23: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   51 |    scanf("Validacion %d\n", pValidation);
+      |                      ~^     ~~~~~~~~~~~
+      |                       |     |
+      |                       int * int
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:16:28 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:51:23: warning: format '%p' expects argument of type 'void **', but argument 2 has type 'int' [-Wformat=]
+   51 |    scanf("Validacion %p \n", pValidation);
+      |                      ~^      ~~~~~~~~~~~
+      |                       |      |
+      |                       |      int
+      |                       void **
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:16:31 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:51:23: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   51 |    scanf("Validacion %d \n", pValidation);
+      |                      ~^      ~~~~~~~~~~~
+      |                       |      |
+      |                       int *  int
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:16:37 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:17:13 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:51:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   51 |    scanf("%d",pValidation);
+      |           ~^  ~~~~~~~~~~~
+      |            |  |
+      |            |  int
+      |            int *
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:17:41 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:18:09 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:18:54 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:20:10 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:20:18 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:23:08 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: variable 'optionSubMenu' set but not used [-Wunused-but-set-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:24:33 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+..\src\functions.c: In function 'MostrarSubMenuABM':
+..\src\functions.c:36:29: warning: passing argument 1 of 'ValidarString' makes pointer from integer without a cast [-Wint-conversion]
+   36 |  validacion = ValidarString(opcion);
+      |                             ^~~~~~
+      |                             |
+      |                             char
+In file included from ..\src\functions.c:1:
+..\src\functions.h:63:24: note: expected 'char *' but argument is of type 'char'
+   63 | int ValidarString(char string[]);
+      |                   ~~~~~^~~~~~~~
+..\src\functions.c: In function 'MostrarSubMenuInformes':
+..\src\functions.c:62:10: warning: returning 'void *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+   62 |   return NULL;
+      |          ^~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:25:46 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+..\src\functions.c: In function 'MostrarSubMenuInformes':
+..\src\functions.c:59:10: warning: returning 'void *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+   59 |   return NULL;
+      |          ^~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:26:44 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+..\src\functions.c: In function 'MostrarSubMenuInformes':
+..\src\functions.c:59:10: warning: returning 'void *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+   59 |   return NULL;
+      |          ^~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:26:58 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:30:32 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+..\src\functions.c: In function 'MostrarSubMenuInformes':
+..\src\functions.c:55:21: error: expected ')' before numeric constant
+   55 |  if(validacion != -1 0 && opcion!= 4){
+      |    ~                ^~
+      |                     )
+11:30:40 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+11:32:42 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+11:45:19 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:64:66: warning: passing argument 3 of 'getString' makes integer from pointer without a cast [-Wint-conversion]
+   64 |      getString(employeeName, "Ingrese el nombre del empleado\n", &nameValidation);
+      |                                                                  ^~~~~~~~~~~~~~~
+      |                                                                  |
+      |                                                                  int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:39:51: note: expected 'int' but argument is of type 'int *'
+   39 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |                                               ~~~~^~~
+..\src\TP2.c:64:6: error: too few arguments to function 'getString'
+   64 |      getString(employeeName, "Ingrese el nombre del empleado\n", &nameValidation);
+      |      ^~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:63:6: note: declared here
+   63 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |      ^~~~~~~~~
+..\src\TP2.c:65:72: warning: passing argument 3 of 'getString' makes integer from pointer without a cast [-Wint-conversion]
+   65 |      getString(employeeLastName, "Ingrese el apellido del empleado\n", &lastNameValidation);
+      |                                                                        ^~~~~~~~~~~~~~~~~~~
+      |                                                                        |
+      |                                                                        int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:39:51: note: expected 'int' but argument is of type 'int *'
+   39 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |                                               ~~~~^~~
+..\src\TP2.c:65:6: error: too few arguments to function 'getString'
+   65 |      getString(employeeLastName, "Ingrese el apellido del empleado\n", &lastNameValidation);
+      |      ^~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:63:6: note: declared here
+   63 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |      ^~~~~~~~~
+..\src\TP2.c:66:75: warning: passing argument 2 of 'IngresarEntero' makes integer from pointer without a cast [-Wint-conversion]
+   66 |      employeeSalary = IngresarEntero("Ingrese el salario del empleado\n", &salaryValidation);
+      |                                                                           ^~~~~~~~~~~~~~~~~
+      |                                                                           |
+      |                                                                           int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:40: note: expected 'int' but argument is of type 'int *'
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |                                    ~~~~^~~
+..\src\TP2.c:66:23: error: too few arguments to function 'IngresarEntero'
+   66 |      employeeSalary = IngresarEntero("Ingrese el salario del empleado\n", &salaryValidation);
+      |                       ^~~~~~~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:5: note: declared here
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |     ^~~~~~~~~~~~~~
+..\src\TP2.c:67:74: warning: passing argument 2 of 'IngresarEntero' makes integer from pointer without a cast [-Wint-conversion]
+   67 |      employeeSector = IngresarEntero("Ingrese el sector del empleado\n", &sectorValidation);
+      |                                                                          ^~~~~~~~~~~~~~~~~
+      |                                                                          |
+      |                                                                          int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:40: note: expected 'int' but argument is of type 'int *'
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |                                    ~~~~^~~
+..\src\TP2.c:67:23: error: too few arguments to function 'IngresarEntero'
+   67 |      employeeSector = IngresarEntero("Ingrese el sector del empleado\n", &sectorValidation);
+      |                       ^~~~~~~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:5: note: declared here
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |     ^~~~~~~~~~~~~~
+..\src\TP2.c:83:86: warning: passing argument 2 of 'IngresarEntero' makes integer from pointer without a cast [-Wint-conversion]
+   83 |      idBusqueda = IngresarEntero("Ingrese el id del empleado que desea modificar\n", &pValidation);
+      |                                                                                      ^~~~~~~~~~~~
+      |                                                                                      |
+      |                                                                                      int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:40: note: expected 'int' but argument is of type 'int *'
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |                                    ~~~~^~~
+..\src\TP2.c:83:19: error: too few arguments to function 'IngresarEntero'
+   83 |      idBusqueda = IngresarEntero("Ingrese el id del empleado que desea modificar\n", &pValidation);
+      |                   ^~~~~~~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:5: note: declared here
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |     ^~~~~~~~~~~~~~
+..\src\TP2.c:120:83: warning: passing argument 2 of 'IngresarEntero' makes integer from pointer without a cast [-Wint-conversion]
+  120 |      idBusqueda = IngresarEntero("Ingrese el id del empleado que desea eliminar", &pValidation);
+      |                                                                                   ^~~~~~~~~~~~
+      |                                                                                   |
+      |                                                                                   int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:40: note: expected 'int' but argument is of type 'int *'
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |                                    ~~~~^~~
+..\src\TP2.c:120:19: error: too few arguments to function 'IngresarEntero'
+  120 |      idBusqueda = IngresarEntero("Ingrese el id del empleado que desea eliminar", &pValidation);
+      |                   ^~~~~~~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:5: note: declared here
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |     ^~~~~~~~~~~~~~
+..\src\TP2.c:149:66: warning: passing argument 2 of 'IngresarEntero' makes integer from pointer without a cast [-Wint-conversion]
+  149 |      optionMenu = IngresarEntero("Ingrese la opcion a ejecutar", &pValidation);
+      |                                                                  ^~~~~~~~~~~~
+      |                                                                  |
+      |                                                                  int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:40: note: expected 'int' but argument is of type 'int *'
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |                                    ~~~~^~~
+..\src\TP2.c:149:19: error: too few arguments to function 'IngresarEntero'
+  149 |      optionMenu = IngresarEntero("Ingrese la opcion a ejecutar", &pValidation);
+      |                   ^~~~~~~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:26:5: note: declared here
+   26 | int IngresarEntero(char mensaje[], int num, int* validacion);
+      |     ^~~~~~~~~~~~~~
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+11:46:00 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:64:66: warning: passing argument 3 of 'getString' makes integer from pointer without a cast [-Wint-conversion]
+   64 |      getString(employeeName, "Ingrese el nombre del empleado\n", &nameValidation);
+      |                                                                  ^~~~~~~~~~~~~~~
+      |                                                                  |
+      |                                                                  int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:39:51: note: expected 'int' but argument is of type 'int *'
+   39 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |                                               ~~~~^~~
+..\src\TP2.c:64:6: error: too few arguments to function 'getString'
+   64 |      getString(employeeName, "Ingrese el nombre del empleado\n", &nameValidation);
+      |      ^~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:63:6: note: declared here
+   63 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |      ^~~~~~~~~
+..\src\TP2.c:65:72: warning: passing argument 3 of 'getString' makes integer from pointer without a cast [-Wint-conversion]
+   65 |      getString(employeeLastName, "Ingrese el apellido del empleado\n", &lastNameValidation);
+      |                                                                        ^~~~~~~~~~~~~~~~~~~
+      |                                                                        |
+      |                                                                        int *
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:39:51: note: expected 'int' but argument is of type 'int *'
+   39 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |                                               ~~~~^~~
+..\src\TP2.c:65:6: error: too few arguments to function 'getString'
+   65 |      getString(employeeLastName, "Ingrese el apellido del empleado\n", &lastNameValidation);
+      |      ^~~~~~~~~
+In file included from ..\src\TP2.c:15:
+..\src\functions.h:63:6: note: declared here
+   63 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |      ^~~~~~~~~
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+11:47:07 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionABM':
+..\src\ArrayEmployees.c:254:48: warning: passing argument 3 of 'getString' makes integer from pointer without a cast [-Wint-conversion]
+  254 |   getString(string, "Ingrese el nuevo nombre", &validation);
+      |                                                ^~~~~~~~~~~
+      |                                                |
+      |                                                int *
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:39:51: note: expected 'int' but argument is of type 'int *'
+   39 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |                                               ~~~~^~~
+..\src\ArrayEmployees.c:254:3: error: too few arguments to function 'getString'
+  254 |   getString(string, "Ingrese el nuevo nombre", &validation);
+      |   ^~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:63:6: note: declared here
+   63 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |      ^~~~~~~~~
+..\src\ArrayEmployees.c:263:50: warning: passing argument 3 of 'getString' makes integer from pointer without a cast [-Wint-conversion]
+  263 |   getString(string, "Ingrese el nuevo apellido", &validation);
+      |                                                  ^~~~~~~~~~~
+      |                                                  |
+      |                                                  int *
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:39:51: note: expected 'int' but argument is of type 'int *'
+   39 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |                                               ~~~~^~~
+..\src\ArrayEmployees.c:263:3: error: too few arguments to function 'getString'
+  263 |   getString(string, "Ingrese el nuevo apellido", &validation);
+      |   ^~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:63:6: note: declared here
+   63 | void getString(char cadena[], char mensaje[], int tam, int* validacion);
+      |      ^~~~~~~~~
+..\src\ArrayEmployees.c:270:61: warning: passing argument 2 of 'IngresarFlotante' makes integer from pointer without a cast [-Wint-conversion]
+  270 |   auxSalario = IngresarFlotante("Ingrese el nuevo salario", &validation);
+      |                                                             ^~~~~~~~~~~
+      |                                                             |
+      |                                                             int *
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:43:44: note: expected 'int' but argument is of type 'int *'
+   43 | float IngresarFlotante(char mensaje[], int num, int* validacion);
+      |                                        ~~~~^~~
+..\src\ArrayEmployees.c:270:16: error: too few arguments to function 'IngresarFlotante'
+  270 |   auxSalario = IngresarFlotante("Ingrese el nuevo salario", &validation);
+      |                ^~~~~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:43:7: note: declared here
+   43 | float IngresarFlotante(char mensaje[], int num, int* validacion);
+      |       ^~~~~~~~~~~~~~~~
+11:47:40 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+..\src\functions.c: In function 'MostrarMenu':
+..\src\functions.c:15:56: warning: passing argument 2 of 'IngresarEntero' makes pointer from integer without a cast [-Wint-conversion]
+   15 |  opcion = IngresarEntero("Ingrese la opcion a elegir", 4, &validacion);
+      |                                                        ^
+      |                                                        |
+      |                                                        int
+In file included from ..\src\functions.c:1:
+..\src\functions.h:26:41: note: expected 'int *' but argument is of type 'int'
+   26 | int IngresarEntero(char mensaje[], int* validacion);
+      |                                    ~~~~~^~~~~~~~~~
+..\src\functions.c:15:11: error: too many arguments to function 'IngresarEntero'
+   15 |  opcion = IngresarEntero("Ingrese la opcion a elegir", 4, &validacion);
+      |           ^~~~~~~~~~~~~~
+In file included from ..\src\functions.c:1:
+..\src\functions.h:26:5: note: declared here
+   26 | int IngresarEntero(char mensaje[], int* validacion);
+      |     ^~~~~~~~~~~~~~
+..\src\functions.c: In function 'MostrarSubMenuABM':
+..\src\functions.c:33:58: warning: passing argument 2 of 'IngresarEntero' makes pointer from integer without a cast [-Wint-conversion]
+   33 |  opcion = IngresarEntero("Ingrese la opcion a ejecutar", 5, &validacion);
+      |                                                          ^
+      |                                                          |
+      |                                                          int
+In file included from ..\src\functions.c:1:
+..\src\functions.h:26:41: note: expected 'int *' but argument is of type 'int'
+   26 | int IngresarEntero(char mensaje[], int* validacion);
+      |                                    ~~~~~^~~~~~~~~~
+..\src\functions.c:33:11: error: too many arguments to function 'IngresarEntero'
+   33 |  opcion = IngresarEntero("Ingrese la opcion a ejecutar", 5, &validacion);
+      |           ^~~~~~~~~~~~~~
+In file included from ..\src\functions.c:1:
+..\src\functions.h:26:5: note: declared here
+   26 | int IngresarEntero(char mensaje[], int* validacion);
+      |     ^~~~~~~~~~~~~~
+..\src\functions.c: In function 'MostrarSubMenuInformes':
+..\src\functions.c:53:58: warning: passing argument 2 of 'IngresarEntero' makes pointer from integer without a cast [-Wint-conversion]
+   53 |  opcion = IngresarEntero("Ingrese la opcion a ejecutar", 2, &validacion);
+      |                                                          ^
+      |                                                          |
+      |                                                          int
+In file included from ..\src\functions.c:1:
+..\src\functions.h:26:41: note: expected 'int *' but argument is of type 'int'
+   26 | int IngresarEntero(char mensaje[], int* validacion);
+      |                                    ~~~~~^~~~~~~~~~
+..\src\functions.c:53:11: error: too many arguments to function 'IngresarEntero'
+   53 |  opcion = IngresarEntero("Ingrese la opcion a ejecutar", 2, &validacion);
+      |           ^~~~~~~~~~~~~~
+In file included from ..\src\functions.c:1:
+..\src\functions.h:26:5: note: declared here
+   26 | int IngresarEntero(char mensaje[], int* validacion);
+      |     ^~~~~~~~~~~~~~
+..\src\functions.c: At top level:
+..\src\functions.c:133:7: error: conflicting types for 'IngresarFlotante'
+  133 | float IngresarFlotante(char mensaje[], int* validacion){
+      |       ^~~~~~~~~~~~~~~~
+In file included from ..\src\functions.c:1:
+..\src\functions.h:43:7: note: previous declaration of 'IngresarFlotante' was here
+   43 | float IngresarFlotante(char mensaje[], int num, int* validacion);
+      |       ^~~~~~~~~~~~~~~~
+11:48:19 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionABM':
+..\src\ArrayEmployees.c:270:61: warning: passing argument 2 of 'IngresarFlotante' makes pointer from integer without a cast [-Wint-conversion]
+  270 |   auxSalario = IngresarFlotante("Ingrese el nuevo salario", 51,&validation);
+      |                                                             ^~
+      |                                                             |
+      |                                                             int
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:43:45: note: expected 'int *' but argument is of type 'int'
+   43 | float IngresarFlotante(char mensaje[], int* validacion);
+      |                                        ~~~~~^~~~~~~~~~
+..\src\ArrayEmployees.c:270:16: error: too many arguments to function 'IngresarFlotante'
+  270 |   auxSalario = IngresarFlotante("Ingrese el nuevo salario", 51,&validation);
+      |                ^~~~~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:2:
+..\src\functions.h:43:7: note: declared here
+   43 | float IngresarFlotante(char mensaje[], int* validacion);
+      |       ^~~~~~~~~~~~~~~~
+11:48:26 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+11:50:50 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:53:00 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:56:07 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:57:44 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+11:59:06 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:00:22 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+12:02:11 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:02:24 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:03:53 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:08:07 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:10:02 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:11:22 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:18:23 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:20:54 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:20:59 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:25:42 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:29:42 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\functions.o" "..\\src\\functions.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:35:14 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+12:39:10 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+12:39:41 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:39:46 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+12:43:49 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:24:7: warning: unused variable 'optionSubMenu' [-Wunused-variable]
+   24 |  char optionSubMenu;
+      |       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:44:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+13:16:30 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:265:17: warning: implicit declaration of function 'CalculatePromActiveEmployees' [-Wimplicit-function-declaration]
+  265 |    validation = CalculatePromActiveEmployees(EmployeesList, TAM, &validation, &promedio, &cantidadEmpleadosHabilitados);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:273:34: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  273 |    printf("El promedio es de: $ %d", promedio);
+      |                                 ~^   ~~~~~~~~
+      |                                  |   |
+      |                                  int double
+      |                                 %f
+..\src\ArrayEmployees.c:274:31: warning: implicit declaration of function 'EmpleadosSuperanPromedio' [-Wimplicit-function-declaration]
+  274 |    contadorEmpleadosSuperan = EmpleadosSuperanPromedio(EmployeesList, TAM, &validation, promedio);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c: In function 'CalculatePromActiveEmployees':
+..\src\ArrayEmployees.c:338:6: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  338 |  int index = 0;
+      |      ^~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:361:5: error: conflicting types for 'EmpleadosSuperanPromedio'
+  361 | int EmpleadosSuperanPromedio(Employee* list, int len, int* validation, float prom){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:361:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+  361 | int EmpleadosSuperanPromedio(Employee* list, int len, int* validation, float prom){
+      | ^~~
+..\src\ArrayEmployees.c:274:31: note: previous implicit declaration of 'EmpleadosSuperanPromedio' was here
+  274 |    contadorEmpleadosSuperan = EmpleadosSuperanPromedio(EmployeesList, TAM, &validation, promedio);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+13:16:41 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:265:17: warning: implicit declaration of function 'CalculatePromActiveEmployees' [-Wimplicit-function-declaration]
+  265 |    validation = CalculatePromActiveEmployees(EmployeesList, TAM, &validation, &promedio, &cantidadEmpleadosHabilitados);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:273:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  273 |    printf("El promedio es de: %d", promedio);
+      |                               ~^   ~~~~~~~~
+      |                                |   |
+      |                                int double
+      |                               %f
+..\src\ArrayEmployees.c:274:31: warning: implicit declaration of function 'EmpleadosSuperanPromedio' [-Wimplicit-function-declaration]
+  274 |    contadorEmpleadosSuperan = EmpleadosSuperanPromedio(EmployeesList, TAM, &validation, promedio);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c: In function 'CalculatePromActiveEmployees':
+..\src\ArrayEmployees.c:338:6: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+  338 |  int index = 0;
+      |      ^~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:361:5: error: conflicting types for 'EmpleadosSuperanPromedio'
+  361 | int EmpleadosSuperanPromedio(Employee* list, int len, int* validation, float prom){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:361:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+  361 | int EmpleadosSuperanPromedio(Employee* list, int len, int* validation, float prom){
+      | ^~~
+..\src\ArrayEmployees.c:274:31: note: previous implicit declaration of 'EmpleadosSuperanPromedio' was here
+  274 |    contadorEmpleadosSuperan = EmpleadosSuperanPromedio(EmployeesList, TAM, &validation, promedio);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+13:17:56 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:273:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  273 |    printf("El promedio es de: %d", promedio);
+      |                               ~^   ~~~~~~~~
+      |                                |   |
+      |                                int double
+      |                               %f
+..\src\ArrayEmployees.c:274:31: warning: implicit declaration of function 'EmpleadosSuperanPromedio' [-Wimplicit-function-declaration]
+  274 |    contadorEmpleadosSuperan = EmpleadosSuperanPromedio(EmployeesList, TAM, &validation, promedio);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:360:5: error: conflicting types for 'EmpleadosSuperanPromedio'
+  360 | int EmpleadosSuperanPromedio(Employee* list, int len, int* validation, float prom){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c:360:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+  360 | int EmpleadosSuperanPromedio(Employee* list, int len, int* validation, float prom){
+      | ^~~
+..\src\ArrayEmployees.c:274:31: note: previous implicit declaration of 'EmpleadosSuperanPromedio' was here
+  274 |    contadorEmpleadosSuperan = EmpleadosSuperanPromedio(EmployeesList, TAM, &validation, promedio);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+13:18:46 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+13:19:33 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:273:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  273 |    printf("El promedio es de: %d", promedio);
+      |                               ~^   ~~~~~~~~
+      |                                |   |
+      |                                int double
+      |                               %f
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:19:37 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+13:20:32 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:273:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  273 |    printf("El promedio es de: %d\n", promedio);
+      |                               ~^     ~~~~~~~~
+      |                                |     |
+      |                                int   double
+      |                               %f
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+13:23:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'EjecutarAccionInformes':
+..\src\ArrayEmployees.c:273:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  273 |    printf("El promedio es de: %d\n", promedio);
+      |                               ~^     ~~~~~~~~
+      |                                |     |
+      |                                int   double
+      |                               %f
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+13:24:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP2.exe "src\\ArrayEmployees.o" "src\\TP2.o" "src\\functions.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2

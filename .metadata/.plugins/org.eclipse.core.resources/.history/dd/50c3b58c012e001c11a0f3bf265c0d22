@@ -1,0 +1,33 @@
+/*
+ * employee.h
+ *
+ *  Created on: 15 Oct 2021
+ *      Author: Lauta
+ */
+
+#ifndef ARRAYEMPLOYEES_H_
+#define ARRAYEMPLOYEES_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#define TAM 1000
+
+typedef struct{
+	int id;
+	char name[51];
+	char lastName[51];
+	float salary;
+	int sector;
+	int isEmpty;
+}Employee;
+
+Employee EmployeesList[TAM];
+int initEmployees(Employee* list, int len);
+//returns 0 = found empty position
+//returns -1 = there's any free space in the list
+int searchFirstEmptyPosition (Employee list[], int tam, int* validation);
+void LoadEmployeeData(int* id, char* name[], char* lastName[], int* salary, int* sector, int* pValidation);
+int addEmployee(Employee* list, int len, int id, char name[],char lastName[],float salary,int sector);
+int findEmployeeById(Employee* list, int len,int id);
+#endif /* ARRAYEMPLOYEES_H_ */
