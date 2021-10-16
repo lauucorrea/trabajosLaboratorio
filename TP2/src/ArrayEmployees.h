@@ -23,6 +23,7 @@ typedef struct{
 }Employee;
 
 Employee EmployeesList[TAM];
+//Inicializa isEmpty en 1 para todas las posiciónes
 int initEmployees(Employee* list, int len);
 //returns 0 = found empty position
 //returns -1 = there's any free space in the list
@@ -78,9 +79,28 @@ int printEmployees(Employee* list, int length);
  *
  */
 int printOneEmployee(Employee* list, int indexEmployee);
+
+//Ejecuta una accion, segun la opcion elegida en el sub menu ABM
+//Option recibe la opcion ingresada por el usuario
+// Index es la posicion de la lista que estamos recorriendo
+// Retorna 0 si no hay error, -1 si encuentra un error
 int EjecutarAccionABM(Employee* list, int index, int option);
+
+//Ejecuta una accion, segun la opcion elegida en el sub menu de informes
+//Option recibe la opcion ingresada por el usuario
+// Retorna 0 si no hay error, -1 si encuentra un error
 int EjecutarAccionInformes(Employee* list, int option);
+
+//Encuentra las posiciones que tienen isEmpty en 0
+//Suma todos los salarios de las coincidencias
+//Divide la suma entre el total de coincidencias encontradas
+//Devuelve los resultados por parametro
+//Por punteros, validation devuelve 0 si esta ok y -1 si hay error
 int CalculatePromActiveEmployees(Employee* list, int len, int* validation, float* promedio, int* totalEmployees);
+
+//Recibe el promedio por parámetros y recorre la lista
+//Las coincidencias de los salarios que superen el promedio, son sumados en un contador
+//Devuelve 0 si esta ok y -1 si hay error
 int EmpleadosSuperanPromedio(Employee* list, int len, int* validation, float prom);
 #endif /* ARRAYEMPLOYEES_H_ */
 
