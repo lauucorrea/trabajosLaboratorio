@@ -77,12 +77,13 @@ int controller_addEmployee(LinkedList* pArrayListEmployee, int* id)
 		getString(nombre, "Ingrese el nombre del empleado", 128, &validacionNombre);
 		horas = IngresarEntero("Ingrese las horas del empleado", &validacionHoras);
 		sueldo = IngresarEntero("Ingrese el sueldo del empelado", &validacionSueldo);
-		printf("EL ID ES, %d\n", id);
+
 		if(oneEmployee != NULL){
 			if(validacionHoras != -1 && validacionNombre != -1 && validacionSueldo != -1){
-				*id = id + 1;
-				employee_setId(oneEmployee, id);
+				*id = *id + 1;
+				employee_setId(oneEmployee, *id);
 				employee_setSueldo(oneEmployee, sueldo);
+				employee_setNombre(oneEmployee, nombre);
 				employee_setHorasTrabajadas(oneEmployee, horas);
 				ll_add(pArrayListEmployee, oneEmployee);
 				retorno = 0;
@@ -422,4 +423,29 @@ int controller_calculateId(LinkedList* pArrayListEmployee){
 		}
 	}
 	return idMax;
+}
+
+int controller_loadFromFile(LinkedList* listaEmpleados,int option, int operation, int* pFlagFileLoaded){
+int validation = -1;
+	switch(option){
+		case 1:
+			ll_clear(listaEmpleados);
+			*pFlagFileLoaded = 0;
+            ll_clear(listaEmpleados);
+            if(operation == 1){
+                validation = controller_loadFromText("data.csv",listaEmpleados);
+            }else{
+                validation = controller_loadFromBinary("data.bin",listaEmpleados);
+            }
+
+		break;
+		case 2:
+			puts("Cancelando carga de datos...");
+			puts("Volviendo a cargar el Menu principal...");
+		break;
+		default:
+			puts("La opcion ingresada no es correcta");
+		break;
+	}
+	return validation;
 }
