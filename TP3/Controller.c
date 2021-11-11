@@ -411,19 +411,14 @@ int controller_calculateId(LinkedList* pArrayListEmployee){
 				if(oneEmployee != NULL){
 					employee_getId(oneEmployee, &idEmpleado);
 
-					if(flagPrimerEmpleado == 1){
+					if(flagPrimerEmpleado == 1 || idEmpleado > idMax){
 						idMax = idEmpleado;
 						flagPrimerEmpleado = 0;
-					}else{
-						if(idEmpleado > idMax){
-							idMax = idEmpleado;
-						}
 					}
 				}
 			}
 		}
 	}
-
 
 	foundedId = controller_loadLastIdFromText("data2.csv");
 

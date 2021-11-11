@@ -106,6 +106,7 @@ int main()
                 break;
                 case 4:
                 	if(flagFileLoaded == 0){
+                		controller_ListEmployee(listaEmpleados);
                        	validationControl = controller_editEmployee(listaEmpleados);
                             if(validationControl != -1){
                             	puts("El empleado se edito correctamente");
@@ -120,6 +121,7 @@ int main()
                 break;
                 case 5:
                    	if(flagFileLoaded == 0){
+                   		controller_ListEmployee(listaEmpleados);
                        	validationControl = controller_removeEmployee(listaEmpleados);
                             if(validationControl != -1){
                             	puts("El empleado se elimino correctamente");
