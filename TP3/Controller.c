@@ -57,7 +57,7 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
  * \return int
  *
  */
-int controller_addEmployee(LinkedList* pArrayListEmployee, int* id)
+int controller_addEmployee(LinkedList* pArrayListEmployee)
 {
 	Employee* oneEmployee;
 	int retorno = -1;
@@ -68,9 +68,10 @@ int controller_addEmployee(LinkedList* pArrayListEmployee, int* id)
 	char nombre[128];
 	int sueldo;
 	int horas;
-
+	int id;
 
 	oneEmployee = employee_new();
+	id = controller_calculateId(pArrayListEmployee);
 
 	if(pArrayListEmployee != NULL){
 
@@ -80,12 +81,13 @@ int controller_addEmployee(LinkedList* pArrayListEmployee, int* id)
 
 		if(oneEmployee != NULL){
 			if(validacionHoras != -1 && validacionNombre != -1 && validacionSueldo != -1){
-				*id = *id + 1;
-				employee_setId(oneEmployee, *id);
+				id++;
+				employee_setId(oneEmployee, id);
 				employee_setSueldo(oneEmployee, sueldo);
 				employee_setNombre(oneEmployee, nombre);
 				employee_setHorasTrabajadas(oneEmployee, horas);
 				ll_add(pArrayListEmployee, oneEmployee);
+				controller_saveLastEmployeeAsText("data2.csv", id);
 				retorno = 0;
 			}
 		}
@@ -309,11 +311,13 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
         pFile = fopen(path,"w");
         fprintf(pFile,"id,nombre,horasTrabajadas,sueldo\n");
         for(i=0; i< ll_len(pArrayListEmployee);i++){
-        	oneEmployee = ll_get(pArrayListEmployee, i);
+        	oneEmployee = (Employee*) ll_get(pArrayListEmployee, i);
+
         	employee_getId(oneEmployee, &id);
         	employee_getNombre(oneEmployee, nombre);
         	employee_getSueldo(oneEmployee, &sueldo);
         	employee_getHorasTrabajadas(oneEmployee, &horas);
+
         	fprintf(pFile,"%d,%s,%d,%d\n",id,nombre,sueldo,horas);
         }
     	fclose(pFile);
@@ -353,6 +357,7 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
     return retorno;
 
 }
+
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
  *
  * \param path char*
@@ -368,40 +373,37 @@ int controller_loadLastIdFromText(char* path)
 
 	if(pFile != NULL){
 		retorno = parser_OneEmployeeFromText(pFile);
-		printf("EL ID ES, %d\n", retorno);
+		printf("EL ID CARGADO POR ULTIMO ES, %d\n", retorno);
 	}
 	fclose(pFile);
 
     return retorno;
 }
-int controller_saveLastEmployeeAsText(char* path, Employee* oneEmployee){
+
+int controller_saveLastEmployeeAsText(char* path, int id){
 	FILE* pFile;
 	int retorno = -1;
-	int* reservaId;
 
-	if(path != NULL){
-    	reservaId = (int*) malloc(sizeof(int));
-    	if(reservaId != NULL){
-    		pFile = fopen(path, "w");
-    		if(pFile != NULL){
-    			retorno = 0;
-        		fprintf(pFile,"id\n");
-        		employee_getId(oneEmployee, reservaId);
-        		fprintf(pFile,"%d\n", *reservaId);
-        		free(reservaId);
-    		}
-    		fclose(pFile);
-    	}
-	}
+	   if(path != NULL){
+	    	retorno = 0;
+	        pFile = fopen(path,"w");
+
+				fprintf(pFile,"idLastEmployee\n");
+				fprintf(pFile,"%d\n",id);
+
+	    	fclose(pFile);
+
+	    }
 	return retorno;
 }
+
 //devuelve el id generado, o -1
 int controller_calculateId(LinkedList* pArrayListEmployee){
 	Employee* oneEmployee;
 	int idEmpleado;
 	int idMax = -1;
 	int flagPrimerEmpleado = 1;
-
+	int foundedId;
 	if(pArrayListEmployee != NULL){
 		if(ll_len(pArrayListEmployee) > 0){
 			for(int i = 0; i < ll_len(pArrayListEmployee);i++){
@@ -419,8 +421,14 @@ int controller_calculateId(LinkedList* pArrayListEmployee){
 					}
 				}
 			}
-			idMax++;
 		}
+	}
+
+
+	foundedId = controller_loadLastIdFromText("data2.csv");
+
+	if(idMax < foundedId){
+		idMax = foundedId;
 	}
 	return idMax;
 }

@@ -49,15 +49,16 @@ int parser_OneEmployeeFromText(FILE* pFile)
 	int retorno = -1;
 
 	if(pFile != NULL){
-		fscanf(pFile, "%[^,],[^\n]\n", idEmployee);
+		fscanf(pFile, "%[^\n]\n", idEmployee);
 		while(!feof(pFile)){
-			fscanf(pFile, "%[^,],[^\n]\n", idEmployee);
+			fscanf(pFile, "%[^\n]\n", idEmployee);
 			retorno = atoi(idEmployee);
 		}
 	}
 
     return retorno;
 }
+
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo binario).
  *

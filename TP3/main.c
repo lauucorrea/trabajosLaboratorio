@@ -27,9 +27,10 @@ int main()
     int optionConfirmOperation = 1;
     int validationControl;
     int pValidation;
-    int lastId;
+
     int flagFirstRoll = 1;
     int flagFileLoaded = -1;
+    int flagFileSaved = -1;
     LinkedList* listaEmpleados = ll_newLinkedList();
 
     do{
@@ -38,57 +39,60 @@ int main()
             switch(option)
             {
                 case 1:
-                	if(flagFileLoaded == 0){
+                	if(flagFileLoaded == 0 && flagFileSaved == -1){
                 		puts("Hay datos sin guardar en el sistema.");
                 		puts("Desea continuar sin guardar los datos?");
                 		optionConfirmOperation = IngresarEntero("Ingrese la respuesta: 1. Si 2.No\n", &pValidation);
+
+						if(pValidation != -1){
+							validationControl = controller_loadFromFile(listaEmpleados, optionConfirmOperation, option, &flagFileLoaded);
+						}else{
+							puts("El dato ingresado es incorrecto");
+							validationControl = -1;
+						}
+                	}else if(flagFileLoaded != 0){
+                		validationControl = controller_loadFromText("data.csv", listaEmpleados);
                 	}
-					if(pValidation != -1){
-						validationControl = controller_loadFromFile(listaEmpleados, optionConfirmOperation, option, &flagFileLoaded);
-					}else{
-						puts("El dato ingresado es incorrecto");
-						validationControl = -1;
-					}
 
 					if(validationControl != -1){
-						if(lastId != -1){
 							puts("El archivo se cargo correctamente");
 							flagFileLoaded = 0;
-						}
 					}else{
 						puts("ERROR ! No pudo cargarse el archivo");
 					}
 
                 break;
                 case 2:
-                	if(flagFileLoaded == 0){
+                	if(flagFileLoaded == 0 && flagFileSaved == -1){
                 		puts("Hay datos sin guardar en el sistema.");
                 		puts("Desea continuar sin guardar los datos?");
                 		optionConfirmOperation = IngresarEntero("Ingrese la respuesta: 1. Si 2.No", &pValidation);
+
+                		if(pValidation != -1){
+    						validationControl = controller_loadFromFile(listaEmpleados, optionConfirmOperation, option, &flagFileLoaded);
+    					}else{
+    						puts("El dato ingresado es incorrecto");
+    						validationControl = -1;
+    					}
+                	}else if(flagFileLoaded != 0){
+                		validationControl = controller_loadFromBinary("data.bin", listaEmpleados);
                 	}
-					if(pValidation != -1){
-						validationControl = controller_loadFromFile(listaEmpleados, optionConfirmOperation, option, &flagFileLoaded);
-					}else{
-						puts("El dato ingresado es incorrecto");
-						validationControl = -1;
-					}
+
 
 					if(validationControl != -1){
-						if(lastId != -1){
 							puts("El archivo se cargo correctamente");
 							flagFileLoaded = 0;
-						}
 					}else{
 						puts("ERROR ! No pudo cargarse el archivo");
 					}
                 break;
                 case 3:
                 	if(flagFirstRoll == 1 && flagFileLoaded == 0){
-                		lastId = controller_calculateId(listaEmpleados);
-                    	validationControl = controller_addEmployee(listaEmpleados,&lastId);
+                		//lastId = controller_calculateId(listaEmpleados);
+                    	validationControl = controller_addEmployee(listaEmpleados);
                     	flagFirstRoll = 0;
                 	}else if (flagFirstRoll == 0 && flagFileLoaded == 0){
-                		validationControl = controller_addEmployee(listaEmpleados,&lastId);
+                		validationControl = controller_addEmployee(listaEmpleados);
                 	}else{
                 		puts("Error ! Lista Vacia");
                 		puts("Deberias cargar al menos un archivo");
@@ -163,6 +167,7 @@ int main()
                     	validationControl = controller_saveAsText("data.csv", listaEmpleados);
                         if(validationControl != -1){
                         	puts("Se guardo el archivo con exito");
+                        	flagFileSaved = 0;
                         }else{
                         	puts("ERROR ! No pudo guardarse el archivo");
                         }
@@ -177,6 +182,7 @@ int main()
                        	validationControl = controller_saveAsBinary("data.bin", listaEmpleados);
                             if(validationControl != -1){
                             	puts("Se guardo el archivo con exito");
+                            	flagFileSaved = 0;
                             }else{
                             	puts("ERROR ! No pudo guardarse el archivo");
                             }
@@ -186,8 +192,18 @@ int main()
                 	}
                 break;
                 case 10:
-                	puts("Saliendo del sistema");
-                	exit(0);
+                	if(flagFileLoaded == 0){
+                		puts("Hay datos sin guardar en el sistema.");
+                		puts("Desea continuar sin guardar los datos?");
+                		optionConfirmOperation = IngresarEntero("Ingrese la respuesta: 1. Si 2.No\n", &pValidation);
+                	}
+                	if(pValidation != -1){
+                    	puts("Saliendo del sistema");
+                    	exit(0);
+                	}else{
+                		puts("Cancelando salida...");
+                	}
+
                 break;
                 default:
                 	puts("ERROR ! opcion incorrecta");
