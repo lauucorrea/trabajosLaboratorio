@@ -424,6 +424,7 @@ int ll_contains(LinkedList* this, void* pElement)
     		auxElement = ll_get(this, i);
     		if(auxElement == pElement){
     			retorno = 1;
+    			break;
     		}
     	}
 
@@ -445,25 +446,22 @@ int ll_contains(LinkedList* this, void* pElement)
 int ll_containsAll(LinkedList* this,LinkedList* this2)
 {
     int retorno = -1;
-    int contadorCoincidencias = 0;
     int control;
     void* auxElement;
 
     if(this!=NULL && this2 != NULL){
     	auxElement = NULL;
-    	retorno = 0;
+    	retorno = 1;
 
     	for(int i=0; i<ll_len(this2); i++){
-    		auxElement = ll_get(this, i);
+    		auxElement = ll_get(this2, i);
+
     		if(auxElement != NULL){
     			control = ll_contains(this, auxElement);
-    			    if(control != -1){
-    			    	contadorCoincidencias++;
+    			    if(control == 0){
+    			    	retorno = 0;
+    			    	break;
     			    }
-    		}
-    		if(contadorCoincidencias == ll_len(this2)){
-    			retorno =1;
-    			 break;
     		}
     	}
     }
