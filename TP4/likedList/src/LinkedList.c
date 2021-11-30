@@ -263,19 +263,13 @@ int ll_remove(LinkedList* this,int index)
                         ( 0) Si funciono correctamente
  *
  */
-//ll_clear PENSAR
+
 int ll_clear(LinkedList* this)
 {
     int retorno = -1;
 
     if(this != NULL){
-    	for(int i = 0; i<ll_len(this) ; i++){
-    		retorno = ll_remove(this, i);
-    		if(retorno == -1){
-    			break;
-    		}
-    	}
-    	retorno = 0;
+    	retorno = ll_remove(this, 0);
     }
 
     return retorno;
@@ -393,12 +387,12 @@ int ll_push(LinkedList* this, int index, void* pElement)
 void* ll_pop(LinkedList* this,int index)
 {
     void* retorno = NULL;
-
     if(this != NULL && (index >=0 && index < ll_len(this))){
     	retorno = ll_get(this,index);
-    	ll_remove(this, index);
+    	if(retorno != NULL){
+    		ll_remove(this, index);
+    	}
     }
-
     return retorno;
 }
 
@@ -411,25 +405,20 @@ void* ll_pop(LinkedList* this,int index)
                         ( 1) Si contiene el elemento
                         ( 0) si No contiene el elemento
 */
-// INDEX OF
+
 int ll_contains(LinkedList* this, void* pElement)
 {
-	void* auxElement;
-
+	int index;
     int retorno = -1;
 
     if(this != NULL){
-    	retorno = 0;
-    	for(int i =0; i < ll_len(this); i++){
-    		auxElement = ll_get(this, i);
-    		if(auxElement == pElement){
-    			retorno = 1;
-    			break;
-    		}
-    	}
+        index = ll_indexOf(this, pElement);
 
-
+        if(index != -1){
+        	retorno = 0 ;
+        }
     }
+
 
     return retorno;
 }
@@ -458,7 +447,7 @@ int ll_containsAll(LinkedList* this,LinkedList* this2)
 
     		if(auxElement != NULL){
     			control = ll_contains(this, auxElement);
-    			    if(control == 0){
+    			    if(control != 0){
     			    	retorno = 0;
     			    	break;
     			    }
@@ -514,19 +503,12 @@ LinkedList* ll_subList(LinkedList* this,int from,int to)
 LinkedList* ll_clone(LinkedList* this)
 {
     LinkedList* clonedArray = NULL;
-    void* pElement;
 
     if(this != NULL){
     	clonedArray = ll_newLinkedList();
 
     	if(clonedArray != NULL){
-    		pElement = NULL;
-
-    		for(int i=0; i<=ll_len(this);i++){
-        		pElement = ll_get(this, i);
-        		ll_add(clonedArray, pElement);
-    		}
-
+    		clonedArray = ll_subList(this, 0, ll_len(this));
     	}
     }
     return clonedArray;
@@ -549,7 +531,6 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
 
     int control1;
     int control2;
-    int huboErrores = -1;
 
     if( this != NULL && pFunc != NULL && (order >= 0 && order <= 1) )
     {
@@ -562,27 +543,19 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
                 elementoJ= ll_get(this,j);
                 pAux = elementoI;
 
-                if(order == 1 && pFunc(elementoI,elementoJ) > 0)
+                if((order == 1 && pFunc(elementoI,elementoJ) > 0) || (order == 0 && pFunc(elementoI,elementoJ) < 0) )
                 {
                     control1 = ll_set(this, i, elementoJ);
                     control2 = ll_set(this, j, pAux);
                 }
 
-                if(order == 0 && pFunc(elementoI, elementoJ) < 0)
-                {
-                	control1 = ll_set(this, i, elementoJ);
-                    control2 = ll_set(this, j, pAux);
-                }
-
-
                 if(control1 == -1 || control2 == -1){
-                	huboErrores = 0;
+                	retorno = -1;
                 	break;
                 }
             }
 
-            if(huboErrores == 0){
-            	retorno = -1;
+            if(retorno == -1){
             	break;
             }
         }
@@ -593,4 +566,3 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
     return retorno;
 
 }
-
