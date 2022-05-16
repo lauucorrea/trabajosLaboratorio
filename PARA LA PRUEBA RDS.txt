@@ -1,5 +1,5 @@
 //CONNECTION STRING PAGE 
-https://www.connectionstrings.com/
+//https://www.connectionstrings.com/
 
 //PARA CREAR UNA CONEXION
 
@@ -23,7 +23,7 @@ comando.connection = conexion
 
 
 
-!!!! 	ExecuteNonQuery --> consultas de edicion (INSERT,UPDATE,DELETE), retorna numero de filas afectadas
+//	ExecuteNonQuery --> consultas de edicion (INSERT,UPDATE,DELETE), retorna numero de filas afectadas
 
 String consulta;
 consulta = UPDATE Personas SET nombre = 'Fer' WHERE id = 1"
@@ -32,7 +32,7 @@ comando.CommandText = consulta;
 conexion.Open();
 comando.ExecutenonQuery();
 
-!!!!    ExecuteReader ---> comandos de lectura . Retorna un objeto SqlDataReader con los datos de la tabla indexados
+//    ExecuteReader ---> comandos de lectura . Retorna un objeto SqlDataReader con los datos de la tabla indexados
 
 comando.CommandText = "SELECT nombre FROM Personas";
 conexion.Open();
@@ -59,9 +59,9 @@ command.ExecuteReader();
 
 
 /////////////////////////////////
-https://onlinegdb.com/0iZ_Czo_y
+// https://onlinegdb.com/0iZ_Czo_y
 //////////////////////////////////
-EJEMPLO COMPLETO ACCESO A DATOS
+//EJEMPLO COMPLETO ACCESO A DATOS
 
 public static class PersonaAccesoDatos
     {
@@ -104,7 +104,7 @@ public static class PersonaAccesoDatos
         }
     }
 
-EJEMPLO MUESTREO 
+//EJEMPLO MUESTREO 
 
 namespace ConexionConsola
 {
@@ -121,7 +121,7 @@ namespace ConexionConsola
     }
 }
 
-EJEMPLO ELIMINAR
+//EJEMPLO ELIMINAR
 
 public static void Eliminar(int id)
         {
@@ -144,7 +144,7 @@ public static void Eliminar(int id)
             }
         }
 
-EJEMPLO GUARDAR
+//EJEMPLO GUARDAR
 
 public static void Guardar(Persona persona)
         {
