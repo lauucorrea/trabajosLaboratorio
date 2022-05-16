@@ -1,0 +1,209 @@
+//CONNECTION STRING PAGE 
+https://www.connectionstrings.com/
+
+//PARA CREAR UNA CONEXION
+
+using System.Data.SqlClient;
+
+string connectionStr = "Data Source=localhost;Initial Catalog=EMPRESA_DB; Integrated Security = True";
+SqlConnection conexion;
+conexion = new SqlConnection(connectionStr);
+
+conexion.Open();
+conexion.Close();
+
+//PARA CREAR INSTRUCCIONES
+
+SqlCommand comando;
+comando = new SqlComand();
+comando.CommandType = System.Data.CommandType.Text;
+comando.CommandText = "SELECT * FROM [tabla]"
+
+comando.connection = conexion
+
+
+
+!!!! 	ExecuteNonQuery --> consultas de edicion (INSERT,UPDATE,DELETE), retorna numero de filas afectadas
+
+String consulta;
+consulta = UPDATE Personas SET nombre = 'Fer' WHERE id = 1"
+
+comando.CommandText = consulta;
+conexion.Open();
+comando.ExecutenonQuery();
+
+!!!!    ExecuteReader ---> comandos de lectura . Retorna un objeto SqlDataReader con los datos de la tabla indexados
+
+comando.CommandText = "SELECT nombre FROM Personas";
+conexion.Open();
+
+SqlDataReader dataReader = comando.ExecuteReader();
+
+while(dataReader.Read()){
+	string aux = dataReader["nombre"].ToString();
+}
+
+
+///BUSCAR UN DATO SEGUN EL INGRESADO
+
+txtSQL = "SELECT * FROM Users WHERE UserId = " + DATOINGRESADO
+
+
+///CONSULTAS PARAMETRIZADAS
+
+txtUserId = "105 OR 1=1";
+sql = "SELECT * FROM Customers WHERE CustomerId = @0";
+command = new SqlCommand(sql);
+command.Parameters.AddWithValue("@0", txtUserId);
+command.ExecuteReader();
+
+
+/////////////////////////////////
+https://onlinegdb.com/0iZ_Czo_y
+//////////////////////////////////
+EJEMPLO COMPLETO ACCESO A DATOS
+
+public static class PersonaAccesoDatos
+    {
+        static string connectionString;
+        static SqlCommand command;
+        static SqlConnection connection;
+
+        static PersonaAccesoDatos()
+        {
+            connectionString = "Data Source=localhost;Initial Catalog=EMPRESA_DB; Integrated Security = True";
+            command = new SqlCommand();
+            connection = new SqlConnection(connectionString);
+            command.Connection = connection;
+            command.CommandType = System.Data.CommandType.Text;
+        }
+
+        public static List<Persona> Leer()
+        {
+            List<Persona> personas = new List<Persona>();
+            try
+            {
+		command.Parameters.Clear();
+                connection.Open();
+                command.CommandText = "SELECT * FROM Persona";
+                SqlDataReader DataReader = command.ExecuteReader();
+                while (DataReader.Read()) {
+                    personas.Add(new Persona(DataReader["nombre"].ToString(), DataReader["apellido"].ToString()));
+                }
+                return personas;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+    }
+
+EJEMPLO MUESTREO 
+
+namespace ConexionConsola
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Persona> personas = PersonaAccesoDatos.Leer();
+            foreach(Persona item in personas)
+            {
+                Console.WriteLine(item.ToString());    
+            }
+        }
+    }
+}
+
+EJEMPLO ELIMINAR
+
+public static void Eliminar(int id)
+        {
+            try
+            {
+		command.Parameters.Clear();
+                connection.Open();
+                command.CommandText = $"DELETE FROM Persona WHERE ID = @id";
+                command.Parameters.AddWithValue("@id", id);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+EJEMPLO GUARDAR
+
+public static void Guardar(Persona persona)
+        {
+
+            try
+            {
+                command.Parameters.Clear();
+                connection.Open();
+                command.CommandText = $"INSERT INTO Persona(nombre,apellido) VALUES (@nombre,@apellido)";
+                command.Parameters.AddWithValue("@nombre", persona.nombre);
+                command.Parameters.AddWithValue("@apellido", persona.apellido);
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+
+SQL
+
+USE EMPRESA_DB;
+
+SELECT DISTINCT p.* FROM PUESTOS p
+LEFT JOIN EMPLEADOS e ON e.ID_PUESTO = p.ID_PUESTO
+WHERE e.ID_EMPLEADO IS NULL;
+
+SELECT DISTINCT p.* FROM PUESTOS p
+LEFT JOIN EMPLEADOS e ON e.ID_PUESTO = p.ID_PUESTO
+WHERE e.ID_EMPLEADO IS NOT NULL;
+
+SELECT AVG(SALARIO) FROM EMPLEADOS WHERE ESTA_ACTIVO = 1;
+
+SELECT SUM(SALARIO) FROM EMPLEADOS WHERE ESTA_ACTIVO = 1;
+
+SELECT COUNT(*) FROM EMPLEADOS WHERE SALARIO > 250000.00;
+
+SELECT COUNT(*) FROM EMPLEADOS WHERE FECHA_ALTA < '2010-01-01';
+
+SELECT MAX(SALARIO) FROM EMPLEADOS;
+
+SELECT p.NOMBRE, p.NIVEL_AUTORIZACION AS minimoEncontrado FROM PUESTOS p WHERE NIVEL_AUTORIZACION = 0;-- as p INNER JOIN EMPLEADOS as e ON p.ID_PUESTO = e.ID_PUESTO;
+
+SELECT CONCAT(NOMBRE,APELLIDO) FROM EMPLEADOS;
+
+SELECT CONCAT(e.NOMBRE,' ',e.APELLIDO, ' ', p.NOMBRE, ' ', p.NIVEL_AUTORIZACION)
+FROM EMPLEADOS e INNER JOIN PUESTOS p
+ON e.ID_PUESTO = p.ID_PUESTO;
+
+SELECT DISTINCT COUNT(e.ID_PUESTO) FROM EMPLEADOS e INNER JOIN PUESTOS p ON e.ID_PUESTO = p.ID_PUESTO;
+
+
+SELECT AVG(e.SALARIO) FROM EMPLEADOS e INNER JOIN PUESTOS p ON p.ID_PUESTO = e.ID_PUESTO;
+
